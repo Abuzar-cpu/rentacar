@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Abuzar-cpu/rentacarconfig
+          search-paths: rentacar
+
+server:
+  port: 8081
